@@ -12,10 +12,11 @@
     <h1>Dog Photo</h1>
     <div id="result"></div>
     <button onClick="getDogPhoto()">Get New Dog Photo</button>
+    <script  src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         async function getDogPhoto(){
             document.getElementById('result').innerHTML = "Loading..."
-            const apiUrl = 'http://dog.ceo/api/breeds/image/random'
+            const apiUrl = 'https://dog.ceo/api/breeds/image/random'
             const imageData = await axios.get(apiUrl)
             const image = imageData.data.message
             // console.log(imageData.data.message);
