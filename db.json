@@ -1,0 +1,30 @@
+{
+    "books": [
+        
+        {
+            "title": "Refactoring - XYZ",
+            "author": "Martin Fowler - y",
+            "id":"1"
+        }, 
+        {
+             "title": "The Pragmatic Programmer",
+            "author": "David Thomas",
+            "id": "2"
+
+        }
+
+    ],
+    
+    "users": [
+    {
+      "name": "John Doe",
+      "email": "john@doe.com",
+      "id": "1"
+    },
+    {
+      "name": "Jane Smith",
+      "email": "jane@doe.com",
+      "id": "2"
+    }
+  ]
+}

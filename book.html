@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books </title>
+</head>
+<body>
+    <h1>Add New Book</h1>
+    <input type="text" id="title" placeholder="Book Title"><br>
+    <input type="text" id="author" placeholder="Book Author"><br>
+        <button onclick="addBook()">Add Book</button>
+        <script>
+            function addBook(){
+                const title = document.getElementById('title').value
+                const author = document.getElementById('author').value
+                const postData = {title, author}
+                console.log(postData);
+            }
+        </script>
+    
+</body>
+</html>
