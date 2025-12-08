@@ -1,7 +1,8 @@
 const apiUrl = 'http://localhost:3000/books'
 const newBook = {
     'title': 'mastering javascript',
-    'author': 'voxov jelanasky',
+    'author': 'John David',
+
 }
 
 await fetch(apiUrl, {

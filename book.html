@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books </title>
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
 </head>
 <body>
     <h1>Add New Book</h1>
     <input type="text" id="title" placeholder="Book Title"><br>
     <input type="text" id="author" placeholder="Book Author"><br>
         <button onclick="addBook()">Add Book</button>
+        <hr>
+        <h1>Delete Book</h1>
+        <input type="text" id="id" placeholder="Book ID"><br>
+        <button onclick="deleteBook()">Delete Book</button>
         <script>
-            function addBook(){
+           async function addBook(){
+                const apiUrl = 'http://localhost:3000/books'
                 const title = document.getElementById('title').value
                 const author = document.getElementById('author').value
                 const postData = {title, author}
-                console.log(postData);
+                // console.log(postData);
+                await fetch(apiUrl, {
+                    method: 'POST',
+                    body:JSON.stringify(postData)
+
+
+                })
+                alert('Book Added')
+                
             }
         </script>
     
